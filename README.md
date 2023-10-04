@@ -1,6 +1,6 @@
 ## Noir | Barbearia
 
-### :computer: [Link do Projeto](https://lasso.herokuapp.com/)
+### :computer: [Link do Projeto](https://noir-barbearia.vercel.app/)
 
 ---
 
