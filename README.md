@@ -8,6 +8,15 @@
 
 ---
 
+### :green_circle: Google Lighthouse - Mobile
+
+![lighthouse_performance](https://github.com/tiagocreator/noir-barbearia/assets/82607849/1b38445c-280a-4acc-93fd-063e6f0b9699)
+![lighthouse_accessibility](https://github.com/tiagocreator/noir-barbearia/assets/82607849/a0ca738c-88c5-41d4-8be7-3c4649a6b012)
+![lighthouse_seo](https://github.com/tiagocreator/noir-barbearia/assets/82607849/119fe749-d8eb-4626-be9f-6467ac0cbc79)
+![lighthouse_best-practices](https://github.com/tiagocreator/noir-barbearia/assets/82607849/0569500a-8c93-486d-b13a-32a5089539d0)
+
+---
+
 ### :sparkles: Sobre o Noir
 
 Esse site utiliza o pré-processador de CCS, LESS, para usar sua capacidade de fazer cálculos de CSS para a responsividiade. Como as unidades __'em'__ são baseadas no tamanho da fonte de seu elemento pai. Se o elemento pai não tiver um tamanho de fonte declarado em seu CSS, o próximo elemento pai com um tamanho de fonte declarado será sua base. Como não estou declarando um tamanho de fonte em nenhum container, literalmente tudo na página procurará um tamanho de fonte na tag __'body'__ e, como declaramos um tamanho de fonte de __'20px'__, os containers se dividirão para obter o valor em __'em'__. Então, apenas defino o tamanho da fonte na tag __'body'__ para __'15px'__ em dispositivos móveis, tablets e desktops pequenos com até __'1023px'__ de largura. Em seguida, em __'1024px'__ de largura, é definido como __'20px'__.
