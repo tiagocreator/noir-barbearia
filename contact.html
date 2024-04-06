@@ -1,331 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="canonical" href="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <link rel="canonical" href="https://noir-barbearia.vercel.app/" />
+  <meta name="description"
+    content="Oferecemos serviços de corte de cabelo, barba e tratamentos de alta qualidade para homens. Agende uma consulta hoje mesmo e experimente a excelência em cuidados masculinos.">
+  <meta name="keywords"
+    content="barbearia, corte de cabelo, barba, estilo masculino, barbearia moderna, tratamento capilar, grooming, barbearia de luxo, cuidados masculinos, navalha, barbeiro, penteados masculinos, cortes clássicos, produtos para barba">
 
-    <!--Social Media Display-->
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:secure_url" content="" />
+  <!--Social Media Display-->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:secure_url" content="" />
 
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" content="#000000" />
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/root.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
-    <link rel="stylesheet" href="/css/dark.css" />
-    <link rel="stylesheet" href="/css/dark-root-styles.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/root.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+  <link rel="stylesheet" href="/css/dark.css" />
+  <link rel="stylesheet" href="/css/dark-root-styles.css" />
 
-    <title>Noir | Contato</title>
-  </head>
-  <body>
-    <a class="skip" aria-label="pular para o conteúdo principal" href="#main"
-      >Clique para ir ao conteúdo principal</a
-    >
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./images/about-mobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./images/about.webp" type="image/webp">
 
-    <header>
-      <!-- Mobile Nav Strip -->
-      <div class="mobile-wrapper">
-        <div class="mobile-nav container mobile-nav-container">
-          <img
-            class="light"
-            id="mobile-logo"
-            src="/images/logo.png"
-            alt="mobile_company_logo"
-            width="110"
-            height="32" />
+  <title>Noir | Contato</title>
+</head>
 
-          <img
-            class="dark"
-            id="mobile-logo"
-            src="/images/logo-white.png"
-            alt="mobile_company_logo"
-            width="110"
-            height="32" />
+<body>
+  <a class="skip" aria-label="pular para o conteúdo principal" href="#main">Clique para ir ao conteúdo principal</a>
 
-          <!-- Hamburger Menu -->
-          <button
-            aria-label="open the menu"
-            id="menu-button"
-            class="hamburger hamburger--spring"
-            onclick="toggleNav()"
-            type="button">
-            <span aria-hidden="true" class="hamburger-box">
-              <span aria-hidden="true" class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
+  <header>
+    <!-- Mobile Nav Strip -->
+    <div class="mobile-wrapper">
+      <div class="mobile-nav container mobile-nav-container">
+        <img defer loading="lazy" width="91" height="57" aria-hidden="true" class="light" src="/images/logo.webp"
+          alt="" />
+        <img defer loading="lazy" width="91" height="57" aria-hidden="true" class="dark" src="/images/logo-white.webp"
+          alt="" />
+
+        <!-- Hamburger Menu -->
+        <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" type="button">
+          <span aria-hidden="true" class="hamburger-box">
+            <span aria-hidden="true" class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
-
-      <!-- ============================================ -->
-      <!--                   NAVIGATION                 -->
-      <!-- ============================================ -->
-
-      <nav>
-        <div class="navbar-menu">
-          <div id="side-menu" class="side-nav">
-            <a class="nav-logo" href="/index.html">
-              <img
-                class="light"
-                aria-hidden="true"
-                decoding="async"
-                src="images/logo.png"
-                alt="compnay logo"
-                height="80" />
-              <img
-                class="dark"
-                aria-hidden="true"
-                decoding="async"
-                src="images/logo-white.png"
-                alt="compnay logo"
-                height="80" />
-            </a>
-            <ul id="on-top" class="navbar-links">
-              <li class="nav-li"><a class="link" href="/index.html">Home</a></li>
-              <li class="nav-li"><a class="link" href="/about.html">Equipe</a></li>
-              <li class="nav-li"><a class="link" href="/index.html#services">Serviços</a></li>
-              <li class="nav-li"><a class="link" href="/testimonials.html">Testemunhas</a></li>
-              <li class="nav-li">
-                <a id="active-menu" class="link" href="/contact.html">Agendar</a>
-              </li>
-            </ul>
-          </div>
-          <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-            <img
-              class="moon"
-              aria-hidden="true"
-              src="/images/moon.svg"
-              alt=""
-              width="24"
-              height="24" />
-            <img
-              class="sun"
-              aria-hidden="true"
-              src="/images/sun.svg"
-              alt=""
-              width="24"
-              height="24" />
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <!-- ============================================ -->
-      <!--                    Landing                   -->
-      <!-- ============================================ -->
-
-      <section id="int-hero">
-        <h1 id="home-h">Agendar Corte</h1>
-      </section>
-
-      <!-- ============================================ -->
-      <!--                    FORM                      -->
-      <!-- ============================================ -->
-
-      <section id="form">
-        <div class="left-section">
-          <span class="topper">Noir</span>
-          <h2>Entre em Contato</h2>
-          <p>
-            Você pode marcar uma hora pelo WhatsApp! Ou se preferir, preencha o formulário de
-            contato que a gente te liga de volta.
-          </p>
-          <form
-            id="contact"
-            name="Contact Form"
-            method="post"
-            data-netlify-recaptcha="true"
-            data-netlify="true">
-            <div class="input-group">
-              <label for="name">Nome</label>
-              <input
-                id="name"
-                aria-label="nome ou apelido"
-                class="input1"
-                name="name"
-                placeholder="Nome ou Apelido"
-                type="text"
-                tabindex="1"
-                required />
-              <div aria-hidden="true" class="hover-box"></div>
-            </div>
-            <div class="input-group">
-              <label for="phone">Número</label>
-              <input
-                id="phone"
-                aria-label="numero de celular"
-                class="input1"
-                name="phone"
-                placeholder="Número para Contato"
-                type="tel"
-                tabindex="2"
-                required />
-              <div aria-hidden="true" class="hover-box"></div>
-            </div>
-            <div class="input-group">
-              <label for="how">Qual horário você prefere? Dia e hora</label>
-              <input
-                id="how"
-                aria-label="dia e hora"
-                name="hear"
-                placeholder="Segunda feira ás 3 da tarde..."
-                type="text"
-                tabindex="3"
-                required />
-              <div aria-hidden="true" class="hover-box"></div>
-            </div>
-            <div class="input-group textarea">
-              <label for="message">Detalhes (opcional)</label>
-              <textarea
-                id="message"
-                aria-label="detalhes"
-                name="message"
-                placeholder="Nos conte mais sobre o estilo de corte que você quer..."
-                tabindex="4"></textarea>
-              <div aria-hidden="true" class="hover-box"></div>
-            </div>
-            <p class="form-submit">
-              <button
-                name="submit"
-                type="submit"
-                id="contact-submit"
-                class="button-solid"
-                data-submit="...Enviando">
-                Enviar
-              </button>
-            </p>
-          </form>
-        </div>
-        <div class="contact-right">
-          <div class="info-group">
-            <span class="heading">Endereço</span>
-            <span class="info">Brasil, AL</span>
-          </div>
-          <div class="info-group">
-            <span class="heading">Número</span>
-            <a class="info" href="tel:12-34567-8910">(12) 34567-8910</a>
-          </div>
-          <div class="info-group">
-            <span class="heading">Email</span>
-            <a class="info" href="mailto:contato@noir.com">contato@noir.com</a>
-          </div>
-          <div class="info-group">
-            <span class="heading">Funcionamento</span>
-            <span class="info last">Seg a Sab de 8:00 as 19:00</span>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
 
     <!-- ============================================ -->
-    <!--                     FOOTER                   -->
+    <!--                   NAVIGATION                 -->
     <!-- ============================================ -->
 
-    <footer id="footer">
-      <div class="container">
-        <div class="left-section">
-          <a class="logo" href=""
-            ><img
-              loading="lazy"
-              decoding="async"
-              src="/images/logo-white.png"
-              alt="logo"
-              width="293"
-              height="91"
-          /></a>
-          <p>
-            Barbearia estilo old-school com equipamentos modernos, onde passado e presente se
-            encontram.
-          </p>
+    <nav>
+      <div class="navbar-menu">
+        <div id="side-menu" class="side-nav">
+          <a class="nav-logo" href="/index.html" aria-label="Página Principal">
+            <img defer loading="lazy" width="150" height="95" class="light" aria-hidden="true" decoding="async"
+              src="images/logo.webp" alt="" />
+            <img defer loading="lazy" width="150" height="95" class="dark" aria-hidden="true" decoding="async"
+              src="images/logo-white.webp" alt="" />
+          </a>
+          <ul id="on-top" class="navbar-links">
+            <li class="nav-li"><a class="link" href="/index.html">Home</a></li>
+            <li class="nav-li"><a class="link" href="/about.html">Equipe</a></li>
+            <li class="nav-li"><a class="link" href="/index.html#services">Serviços</a></li>
+            <li class="nav-li"><a class="link" href="/testimonials.html">Testemunhas</a></li>
+            <li class="nav-li">
+              <a id="active-menu" class="link" href="/contact.html">Agendar</a>
+            </li>
+          </ul>
         </div>
-        <div class="right-section">
-          <div class="lists">
-            <ul>
-              <li><h2>Noir</h2></li>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">Equipe</a></li>
-              <li><a href="/contact.html">Serviços</a></li>
-            </ul>
-            <ul>
-              <li><h2>Agendar</h2></li>
-              <li><a href="/contact.html">Contato</a></li>
-            </ul>
-            <ul>
-              <li><h2>Endereço</h2></li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/pin.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="" target="_blank">Brasil, AL</a>
-              </li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/footer-phone.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="tel:12-34567-8910">(12) 34567-8910</a>
-              </li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/email.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="mailto:contato@noir.com">contato@noir.com</a>
-              </li>
-            </ul>
-          </div>
+        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+          <img defer loading="lazy" class="moon" aria-hidden="true" src="/images/moon.svg" alt="" width="24"
+            height="24" />
+          <img defer loading="lazy" class="sun" aria-hidden="true" src="/images/sun.svg" alt="" width="24"
+            height="24" />
+        </button>
+      </div>
+    </nav>
+  </header>
 
-          <div class="buttons">
-            <a class="button-solid" href="/contact.html"> Marque Um Horário! </a>
+  <main id="main">
+    <!-- ============================================ -->
+    <!--                    Landing                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+      <h1 id="home-h">Agendar Corte</h1>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    FORM                      -->
+    <!-- ============================================ -->
+
+    <section id="form">
+      <div class="left-section">
+        <span class="topper">Noir</span>
+        <h2>Entre em Contato</h2>
+        <p>
+          Você pode marcar uma hora pelo WhatsApp! Ou se preferir, preencha o formulário de
+          contato que a gente te liga de volta.
+        </p>
+        <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
+          <div class="input-group">
+            <label for="name">Nome</label>
+            <input id="name" aria-label="nome ou apelido" class="input1" name="name" placeholder="Nome ou Apelido"
+              type="text" required />
+            <div aria-hidden="true" class="hover-box"></div>
           </div>
+          <div class="input-group">
+            <label for="phone">Número</label>
+            <input id="phone" aria-label="numero de celular" class="input1" name="phone"
+              placeholder="Número para Contato" type="tel" required />
+            <div aria-hidden="true" class="hover-box"></div>
+          </div>
+          <div class="input-group">
+            <label for="how">Qual horário você prefere? Dia e hora</label>
+            <input id="how" aria-label="dia e hora" name="hear" placeholder="Segunda feira ás 3 da tarde..." type="text"
+              required />
+            <div aria-hidden="true" class="hover-box"></div>
+          </div>
+          <div class="input-group textarea">
+            <label for="message">Detalhes (opcional)</label>
+            <textarea id="message" aria-label="detalhes" name="message"
+              placeholder="Nos conte mais sobre o estilo de corte que você quer..."></textarea>
+            <div aria-hidden="true" class="hover-box"></div>
+          </div>
+          <p class="form-submit">
+            <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Enviando">
+              Enviar
+            </button>
+          </p>
+        </form>
+      </div>
+      <div class="contact-right">
+        <div class="info-group">
+          <span class="heading">Endereço</span>
+          <span class="info">Brasil, AL</span>
+        </div>
+        <div class="info-group">
+          <span class="heading">Número</span>
+          <a class="info" href="tel:12-34567-8910">(12) 34567-8910</a>
+        </div>
+        <div class="info-group">
+          <span class="heading">Email</span>
+          <a class="info" href="mailto:contato@noir.com">contato@noir.com</a>
+        </div>
+        <div class="info-group">
+          <span class="heading">Funcionamento</span>
+          <span class="info last">Seg a Sab de 8:00 as 19:00</span>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script>
-      var ba = ['MSIE', 'Trident', 'Edge'];
-      var b,
-        ua = navigator.userAgent;
-      for (var i = 0; i < ba.length; i++) {
-        if (ua.indexOf(ba[i]) > -1) {
-          b = ba[i];
-          break;
-        }
-      }
-      if (b == 'MSIE' || b == 'Trident' || b == 'Edge') {
-        b = 'Internet Explorer';
-        alert(
-          'Você está usando o navegador ' +
-            b +
-            ' que é incompatível com esse e muitos outros sites.  Para navegar por esse site, ultilize o Google Chrome ou o Firefox, obrigado!',
-        );
-      }
-    </script>
+  <!-- ============================================ -->
+  <!--                     FOOTER                   -->
+  <!-- ============================================ -->
 
-    <script defer src="/app.js"></script>
-  </body>
+  <footer id="footer">
+    <div class="container">
+      <div class="left-section">
+        <a class="logo" href=""><img defer loading="lazy" decoding="async" src="/images/logo-white.webp" alt="logo"
+            width="293" height="91" /></a>
+        <p>
+          Barbearia estilo old-school com equipamentos modernos, onde passado e presente se
+          encontram.
+        </p>
+      </div>
+      <div class="right-section">
+        <div class="lists">
+          <ul>
+            <li>
+              <h2>Noir</h2>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">Equipe</a></li>
+            <li><a href="/contact.html">Serviços</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Agendar</h2>
+            </li>
+            <li><a href="/contact.html">Contato</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Endereço</h2>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/pin.svg" alt="" width="24" height="24" /><a
+                href="" target="_blank">Brasil, AL</a>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/footer-phone.svg" alt="" width="24"
+                height="24" /><a href="tel:12-34567-8910">(12) 34567-8910</a>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/email.svg" alt="" width="24" height="24" /><a
+                href="mailto:contato@noir.com">contato@noir.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <a class="button-solid" href="/contact.html"> Marque Um Horário! </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var ba = ['MSIE', 'Trident', 'Edge'];
+    var b,
+      ua = navigator.userAgent;
+    for (var i = 0; i < ba.length; i++) {
+      if (ua.indexOf(ba[i]) > -1) {
+        b = ba[i];
+        break;
+      }
+    }
+    if (b == 'MSIE' || b == 'Trident' || b == 'Edge') {
+      b = 'Internet Explorer';
+      alert(
+        'Você está usando o navegador ' +
+        b +
+        ' que é incompatível com esse e muitos outros sites.  Para navegar por esse site, ultilize o Google Chrome ou o Firefox, obrigado!',
+      );
+    }
+  </script>
+
+  <script defer src="/app.js"></script>
+</body>
+
 </html>

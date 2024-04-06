@@ -1,456 +1,261 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="canonical" href="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <link rel="canonical" href="https://noir-barbearia.vercel.app/" />
+  <meta name="description"
+    content="Oferecemos serviços de corte de cabelo, barba e tratamentos de alta qualidade para homens. Agende uma consulta hoje mesmo e experimente a excelência em cuidados masculinos.">
+  <meta name="keywords"
+    content="barbearia, corte de cabelo, barba, estilo masculino, barbearia moderna, tratamento capilar, grooming, barbearia de luxo, cuidados masculinos, navalha, barbeiro, penteados masculinos, cortes clássicos, produtos para barba">
 
-    <!--Social Media Display-->
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:secure_url" content="" />
+  <!--Social Media Display-->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:secure_url" content="" />
 
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" content="#000000" />
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/root.css" />
-    <link rel="stylesheet" href="/css/testimonials.css" />
-    <link rel="stylesheet" href="/css/dark.css" />
-    <link rel="stylesheet" href="/css/dark-root-styles.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/root.css" />
+  <link rel="stylesheet" href="/css/testimonials.css" />
+  <link rel="stylesheet" href="/css/dark.css" />
+  <link rel="stylesheet" href="/css/dark-root-styles.css" />
 
-    <title>Noir | Testemunhas</title>
-  </head>
-  <body>
-    <a class="skip" aria-label="pular para o conteúdo principal" href="#main"
-      >Clique para ir ao conteúdo principal</a
-    >
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./images/about-mobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./images/about.webp" type="image/webp">
 
-    <header>
-      <!-- Mobile Nav Strip -->
-      <div class="mobile-wrapper">
-        <div class="mobile-nav container mobile-nav-container">
-          <!--Light mode logo-->
-          <img
-            class="light"
-            id="mobile-logo"
-            src="/images/logo.png"
-            alt="mobile_company_logo"
-            height="60" />
-          <!--Dark mode logo-->
-          <img
-            class="dark"
-            id="mobile-logo"
-            src="/images/logo-white.png"
-            alt="mobile_company_logo"
-            height="60" />
+  <title>Noir | Testemunhas</title>
+</head>
 
-          <!-- Hamburger Menu -->
-          <button
-            aria-label="open the menu"
-            id="menu-button"
-            class="hamburger hamburger--spring"
-            onclick="toggleNav()"
-            type="button">
-            <span aria-hidden="true" class="hamburger-box">
-              <span aria-hidden="true" class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
+<body>
+  <a class="skip" aria-label="pular para o conteúdo principal" href="#main">Clique para ir ao conteúdo principal</a>
+
+  <header>
+    <!-- Mobile Nav Strip -->
+    <div class="mobile-wrapper">
+      <div class="mobile-nav container mobile-nav-container">
+        <!--Light mode logo-->
+        <img defer loading="lazy" width="91" height="57" aria-hidden="true" class="light" src="/images/logo.webp"
+          alt="" />
+        <!--Dark mode logo-->
+        <img defer loading="lazy" width="91" height="57" aria-hidden="true" class="dark" src="/images/logo-white.webp"
+          alt="" />
+
+        <!-- Hamburger Menu -->
+        <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" type="button">
+          <span aria-hidden="true" class="hamburger-box">
+            <span aria-hidden="true" class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
-
-      <!-- ============================================ -->
-      <!--                   NAVIGATION                 -->
-      <!-- ============================================ -->
-
-      <nav>
-        <div class="navbar-menu">
-          <div id="side-menu" class="side-nav">
-            <a class="nav-logo" href="/index.html">
-              <!--Light mode logo-->
-              <img
-                class="light"
-                aria-hidden="true"
-                decoding="async"
-                src="images/logo.png"
-                alt="compnay logo"
-                height="80" />
-              <!--Dark mode logo-->
-              <img
-                class="dark"
-                aria-hidden="true"
-                decoding="async"
-                src="images/logo-white.png"
-                alt="compnay logo"
-                height="80" />
-            </a>
-            <ul id="on-top" class="navbar-links">
-              <li class="nav-li"><a class="link" href="/index.html">Home</a></li>
-              <li class="nav-li"><a class="link" href="/about.html">Equipe</a></li>
-              <li class="nav-li"><a class="link" href="/index.html#services">Serviços</a></li>
-              <li class="nav-li">
-                <a id="active-menu" class="link" href="/testimonials.html">Testemunhas</a>
-              </li>
-              <li class="nav-li"><a class="link" href="/contact.html">Agendar</a></li>
-            </ul>
-          </div>
-          <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-            <img
-              class="moon"
-              aria-hidden="true"
-              src="/images/moon.svg"
-              alt=""
-              width="24"
-              height="24" />
-            <img
-              class="sun"
-              aria-hidden="true"
-              src="/images/sun.svg"
-              alt=""
-              width="24"
-              height="24" />
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <!-- ============================================ -->
-      <!--                    Landing                   -->
-      <!-- ============================================ -->
-
-      <section id="int-hero">
-        <h1 id="home-h">Testemunhas</h1>
-      </section>
-
-      <!-- ============================================ -->
-      <!--                 TESTOMONIES                  -->
-      <!-- ============================================ -->
-
-      <section id="reviews" class="review-wrapper">
-        <div class="stars">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
-          voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
-          molestias veniam quam sequi magnam natus aut?
-        </p>
-        <span class="name">Maria Silva</span>
-        <div class="stars">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
-          voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
-          molestias veniam quam sequi magnam natus aut?
-        </p>
-        <span class="name">Pedro</span>
-        <div class="stars">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
-          voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
-          molestias veniam quam sequi magnam natus aut?
-        </p>
-        <span class="name">Nataly Ferreira</span>
-        <div class="stars">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
-          voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
-          molestias veniam quam sequi magnam natus aut?
-        </p>
-        <span class="name">Ryan</span>
-        <div class="stars">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/images/star.svg"
-            alt=""
-            height="30"
-            width="30" />
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
-          voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
-          molestias veniam quam sequi magnam natus aut?
-        </p>
-        <span class="name">Marcos</span>
-      </section>
-    </main>
+    </div>
 
     <!-- ============================================ -->
-    <!--                     FOOTER                   -->
+    <!--                   NAVIGATION                 -->
     <!-- ============================================ -->
 
-    <footer id="footer">
-      <div class="container">
-        <div class="left-section">
-          <a class="logo" href=""
-            ><img
-              loading="lazy"
-              decoding="async"
-              src="/images/logo-white.png"
-              alt="logo"
-              width="293"
-              height="91"
-          /></a>
-          <p>
-            Barbearia estilo old-school com equipamentos modernos, onde passado e presente se
-            encontram.
-          </p>
+    <nav>
+      <div class="navbar-menu">
+        <div id="side-menu" class="side-nav">
+          <a class="nav-logo" href="/index.html" aria-label="Página Principal">
+            <img defer loading="lazy" width="150" height="95" class="light" aria-hidden="true" decoding="async"
+              src="images/logo.webp" alt="" />
+            <img defer loading="lazy" width="150" height="95" class="dark" aria-hidden="true" decoding="async"
+              src="images/logo-white.webp" alt="" />
+          </a>
+          <ul id="on-top" class="navbar-links">
+            <li class="nav-li"><a class="link" href="/index.html">Home</a></li>
+            <li class="nav-li"><a class="link" href="/about.html">Equipe</a></li>
+            <li class="nav-li"><a class="link" href="/index.html#services">Serviços</a></li>
+            <li class="nav-li">
+              <a id="active-menu" class="link" href="/testimonials.html">Testemunhas</a>
+            </li>
+            <li class="nav-li"><a class="link" href="/contact.html">Agendar</a></li>
+          </ul>
         </div>
-        <div class="right-section">
-          <div class="lists">
-            <ul>
-              <li><h2>Noir</h2></li>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">Equipe</a></li>
-              <li><a href="/contact.html">Serviços</a></li>
-            </ul>
-            <ul>
-              <li><h2>Agendar</h2></li>
-              <li><a href="/contact.html">Contato</a></li>
-            </ul>
-            <ul>
-              <li><h2>Endereço</h2></li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/pin.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="" target="_blank">Brasil, AL</a>
-              </li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/footer-phone.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="tel:12-34567-8910">(12) 34567-8910</a>
-              </li>
-              <li>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/email.svg"
-                  alt=""
-                  width="24"
-                  height="24" /><a href="mailto:contato@noir.com">contato@noir.com</a>
-              </li>
-            </ul>
-          </div>
+        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+          <img defer loading="lazy" class="moon" aria-hidden="true" src="/images/moon.svg" alt="" width="24"
+            height="24" />
+          <img defer loading="lazy" class="sun" aria-hidden="true" src="/images/sun.svg" alt="" width="24"
+            height="24" />
+        </button>
+      </div>
+    </nav>
+  </header>
 
-          <div class="buttons">
-            <a class="button-solid" href="/contact.html"> Marque Um Horário! </a>
-          </div>
+  <main id="main">
+    <!-- ============================================ -->
+    <!--                    Landing                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+      <h1 id="home-h">Testemunhas</h1>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 TESTOMONIES                  -->
+    <!-- ============================================ -->
+
+    <section id="reviews" class="review-wrapper">
+      <div class="stars">
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
+        voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
+        molestias veniam quam sequi magnam natus aut?
+      </p>
+      <span class="name">Maria Silva</span>
+      <div class="stars">
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
+        voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
+        molestias veniam quam sequi magnam natus aut?
+      </p>
+      <span class="name">Pedro</span>
+      <div class="stars">
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
+        voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
+        molestias veniam quam sequi magnam natus aut?
+      </p>
+      <span class="name">Nataly Ferreira</span>
+      <div class="stars">
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
+        voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
+        molestias veniam quam sequi magnam natus aut?
+      </p>
+      <span class="name">Ryan</span>
+      <div class="stars">
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+        <img defer loading="lazy" decoding="async" src="/images/star.svg" alt="" height="30" width="30" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis assumenda
+        voluptatum dolor quaerat labore quis commodi impedit quod inventore reiciendis beatae, ab
+        molestias veniam quam sequi magnam natus aut?
+      </p>
+      <span class="name">Marcos</span>
+    </section>
+  </main>
+
+  <!-- ============================================ -->
+  <!--                     FOOTER                   -->
+  <!-- ============================================ -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="left-section">
+        <a class="logo" href=""><img defer loading="lazy" decoding="async" src="/images/logo-white.webp" alt="logo"
+            width="293" height="91" /></a>
+        <p>
+          Barbearia estilo old-school com equipamentos modernos, onde passado e presente se
+          encontram.
+        </p>
+      </div>
+      <div class="right-section">
+        <div class="lists">
+          <ul>
+            <li>
+              <h2>Noir</h2>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">Equipe</a></li>
+            <li><a href="/contact.html">Serviços</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Agendar</h2>
+            </li>
+            <li><a href="/contact.html">Contato</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Endereço</h2>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/pin.svg" alt="" width="24" height="24" /><a
+                href="" target="_blank">Brasil, AL</a>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/footer-phone.svg" alt="" width="24"
+                height="24" /><a href="tel:12-34567-8910">(12) 34567-8910</a>
+            </li>
+            <li>
+              <img defer loading="lazy" decoding="async" src="/images/email.svg" alt="" width="24" height="24" /><a
+                href="mailto:contato@noir.com">contato@noir.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <a class="button-solid" href="/contact.html"> Marque Um Horário! </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script>
-      var ba = ['MSIE', 'Trident', 'Edge'];
-      var b,
-        ua = navigator.userAgent;
-      for (var i = 0; i < ba.length; i++) {
-        if (ua.indexOf(ba[i]) > -1) {
-          b = ba[i];
-          break;
-        }
+  <script>
+    var ba = ['MSIE', 'Trident', 'Edge'];
+    var b,
+      ua = navigator.userAgent;
+    for (var i = 0; i < ba.length; i++) {
+      if (ua.indexOf(ba[i]) > -1) {
+        b = ba[i];
+        break;
       }
-      if (b == 'MSIE' || b == 'Trident' || b == 'Edge') {
-        b = 'Internet Explorer';
-        alert(
-          'Você está usando o navegador ' +
-            b +
-            ' que é incompatível com esse e muitos outros sites.  Para navegar por esse site, ultilize o Google Chrome ou o Firefox, obrigado!',
-        );
-      }
-    </script>
+    }
+    if (b == 'MSIE' || b == 'Trident' || b == 'Edge') {
+      b = 'Internet Explorer';
+      alert(
+        'Você está usando o navegador ' +
+        b +
+        ' que é incompatível com esse e muitos outros sites.  Para navegar por esse site, ultilize o Google Chrome ou o Firefox, obrigado!',
+      );
+    }
+  </script>
 
-    <script defer src="/app.js"></script>
-  </body>
+  <script defer src="/app.js"></script>
+</body>
+
 </html>
