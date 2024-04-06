@@ -1,10 +1,11 @@
 let toggleNavStatus = false;
 
-let toggleNav = function () {
-  let getSidebar = document.querySelector('.navbar-menu');
-  let getSidebarLinks = document.querySelectorAll('.side-nav a');
-  let getSidebarVisibility = document.querySelector('.side-nav');
-  var htmlGrab = document.querySelector('html');
+// toggle mobile menu
+const toggleNav = function () {
+  const getSidebar = document.querySelector('.navbar-menu');
+  const getSidebarLinks = document.querySelectorAll('.side-nav a');
+  const getSidebarVisibility = document.querySelector('.side-nav');
+  const htmlGrab = document.querySelector('html');
   const hamburger = document.querySelector('.hamburger');
 
   hamburger.classList.toggle('is-active');
@@ -13,17 +14,15 @@ let toggleNav = function () {
     getSidebarVisibility.style.visibility = 'visible';
     getSidebarVisibility.style.pointerEvents = 'initial';
 
-    getSidebarLinks.forEach((item, index) => {
-      console.log(item);
+    getSidebarLinks.forEach((item) => {
       item.style.opacity = '1';
       item.style.visibility = 'visible';
     });
     getSidebar.style.width = '60%';
     htmlGrab.classList.add('clicked');
     toggleNavStatus = true;
-    servicesUL.classList.add('clicked');
   } else if (toggleNavStatus === true) {
-    getSidebarLinks.forEach((item, index) => {
+    getSidebarLinks.forEach((item) => {
       item.style.opacity = '0';
       item.style.transitionDelay = '0s';
       item.style.visibility = 'hidden';
@@ -31,13 +30,14 @@ let toggleNav = function () {
     getSidebar.style.width = '0';
     htmlGrab.classList.remove('clicked');
     toggleNavStatus = false;
-    servicesUL.classList.remove('clicked');
     getSidebarVisibility.style.pointerEvents = 'none';
   }
 };
+const menuButton = document.querySelector('#menu-button');
+menuButton.addEventListener('click', toggleNav);
 
-var body = document.querySelector('body');
-
+// dark mode
+const body = document.querySelector('body');
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('.dark-mode-button');
 
@@ -51,7 +51,7 @@ const disableDarkMode = () => {
   localStorage.setItem('darkMode', null);
 };
 
-if (darkMode == 'enabled') {
+if (darkMode === 'enabled') {
   enableDarkMode();
 }
 
@@ -63,3 +63,17 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode();
   }
 });
+
+// handle nav logo display
+const navLogo = document.querySelector('.nav-logo');
+
+const handleResize = () => {
+  if (window.innerWidth < 1024) {
+    navLogo.style.display = 'none';
+  } else {
+    navLogo.style.display = 'block';
+  }
+};
+
+window.addEventListener('resize', handleResize);
+handleResize();
